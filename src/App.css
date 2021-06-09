@@ -1,39 +1,31 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+*{
+    margin: 0;
   }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefc01;
+    height: 100vh;
+    overflow: hidden;
   }
-  50% {
-    transform: translateY(10px);
+  
+  .app__logo {
+    object-fit: contain;
+    height: 100px;
   }
-  100% {
-    transform: translateY(0px);
+  
+  .body__background {
+    background-color: white;
+    height: 393px;
   }
-}
+  
+  .app__body {
+    background: url("https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrwawings-cell.png") no-repeat center;
+    background-size: contain;
+    height: 542px;
+    width: 376px;
+    padding: 63px;
+  }
