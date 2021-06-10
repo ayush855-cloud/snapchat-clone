@@ -57,7 +57,7 @@ function Preview() {
         <Crop />
         <Timer />
       </div>
-            <img src={image} className="captureImage"/>
+            <img src={image} className="captureImage" alt="imag"/>
             <div className="preview__footer">
         <h2>Send now</h2>
         <Send onClick={sendPost} className="preview__sendIcon" />

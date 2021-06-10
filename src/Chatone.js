@@ -1,6 +1,6 @@
 import { Avatar } from '@material-ui/core';
 import { StopRounded } from '@material-ui/icons';
-import React, {useState} from 'react';
+import React from 'react';
 import './Chatone.css';
 import ReactTimeAgo from 'react-timeago';
 import { setCameraImage } from './features/cameraSlice';
@@ -11,7 +11,8 @@ import { db } from './firebase';
 export default function Chatone({ id, profilePic, username, timestamp, imageUrl, read }) {
   const history = useHistory()
   const dispatch = useDispatch();
-  const [date, setDate] = useState(null)
+  
+
   const open = () => {
     if (!read) {
       dispatch(setCameraImage(imageUrl));

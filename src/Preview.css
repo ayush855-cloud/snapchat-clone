@@ -6,6 +6,7 @@
     top: 0px;
     margin: 5px;
     font-size: 22px !important;
+    color:white !important;
 }
 .preview__toolbarRight {
     color: white;
@@ -29,7 +30,7 @@
 .preview__footer{
     position: absolute;
     bottom: 0;
-    right: -25px ;
+    right: -49px ;
     transform: translate(-50%,-50%);
     background-color: yellow;
     color: black;

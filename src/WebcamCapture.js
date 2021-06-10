@@ -25,7 +25,7 @@ function WebcamCapture() {
             //   console.log(imageSrc);
 
         },
-        [webcamRef]
+        [webcamRef,dispatch,history]
     );
 
     return (

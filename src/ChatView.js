@@ -8,6 +8,10 @@ import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 export default function ChatView() {
   const selectedImage = useSelector(selectCameraImage);
   const history = useHistory()
+  const exit = () => {
+    history.replace('/chats');
+  }
+
   useEffect(() => {
     if (!selectedImage) {
       exit();
@@ -15,9 +19,7 @@ export default function ChatView() {
 
   }, [selectedImage])
 
-  const exit = () => {
-    history.replace('/chats');
-  }
+  
 
   return (
     <div className="chatView">
